@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-col1, col2, col3 = st.columns([0.5, 0.5, 1])
+col1, col2= st.columns([0.5, 1])
 
 
 
@@ -17,10 +17,3 @@ with col1:
                      url="https://onedrive.live.com/personal/8de00afca386d6d5/_layouts/15/doc.aspx?resid=b1ef606d-67c3-4927-89cd-157ade505da6&cid=8de00afca386d6d5&ct=1740085175166&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=db424c9f-d3c3-4105-baac-667541cc50cf")
 with col2:
     st.image("1.jpg", width=300)
-
-sheets_dict = pd.read_excel('DECO.xlsx', engine="openpyxl", sheet_name=None)
-
-# Accessing a specific sheet by name
-with col3:
-    specific_sheet = sheets_dict['Sheet1']
-    st.write(specific_sheet)
