@@ -18,5 +18,8 @@ with col1:
         
     st.link_button(label="ser1",
                   url="https://excel.cloud.microsoft/open/onedrive/?docId=8DE00AFCA386D6D5%21sae9a56bb84f0413c975a7d6396cffd60&driveId=8DE00AFCA386D6D5")
+
+    st.link_button(label="Google sheets",
+                  url="https://docs.google.com/spreadsheets/d/1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY/edit?usp=sharing")
 with col2:
     st.image("1.jpg", width=300)
