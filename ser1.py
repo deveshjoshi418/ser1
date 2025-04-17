@@ -24,15 +24,15 @@ with col2:
     st.image("1.jpg", width=300)
 
 sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
-    gid = "0"  # GID of the first sheet
+gid = "0"  # GID of the first sheet
 
-    csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
+csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
-    # Load the CSV into a DataFrame
-    df = pd.read_csv(csv_url)
-    dfst = pd.DataFrame(df, index=["row1"])
+# Load the CSV into a DataFrame
+df = pd.read_csv(csv_url)
+dfst = pd.DataFrame(df, index=["row1"])
 
-    st.dataframe(df, hide_index=True)
+st.dataframe(df, hide_index=True)
     
     
 
