@@ -17,7 +17,9 @@ with col2:
 
 with col3:
     sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
-    gid = "0"  # GID of the first sheet
+    # gid = "0"  
+    # sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
+    gid = "687391187"
 
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
