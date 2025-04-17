@@ -30,7 +30,7 @@ with col3:
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
     # Load the CSV into a DataFrame
-    df = pd.read_csv(csv_url)
+    df = pd.read_csv(csv_url, hide_index=True)
 
     st.dataframe(df)
     
