@@ -21,20 +21,20 @@ with col3:
 
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
-    df = pd.read_csv(csv_url, usecols=[1,2,3,4,5])
-    df_clean = df.dropna()
+    df1 = pd.read_csv(csv_url, usecols=[1,2,3,4,5])
+    df1_clean = df1.dropna()
     
-    st.dataframe(df, width= 515, hide_index=True, use_container_width=False)
+    st.dataframe(df1_clean, width= 515, hide_index=True, use_container_width=False)
 
     sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
     gid = "687391187"
 
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
-    df = pd.read_csv(csv_url, usecols=[6,7])
-    df_clean = df.dropna()
+    df2 = pd.read_csv(csv_url, usecols=[6,7])
+    df2_clean = df1.dropna()
     
-    st.dataframe(df, width= 350, hide_index=True, use_container_width=False)
+    st.dataframe(d2f_clean, width= 350, hide_index=True, use_container_width=False)
     
     
 
