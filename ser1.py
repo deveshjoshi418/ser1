@@ -32,7 +32,7 @@ with col3:
 
     df = pd.read_csv(csv_url, usecols=[6,7])
     
-    st.dataframe(df, width= 118, hide_index=True, use_container_width=False)
+    st.dataframe(df, width= 125, hide_index=True, use_container_width=False)
     
     
 
