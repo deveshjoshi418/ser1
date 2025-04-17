@@ -31,6 +31,7 @@ with col3:
 
     # Load the CSV into a DataFrame
     df = pd.read_csv(csv_url)
+    dfst = pd.DataFrame(df, index=["row1", "row2", "row3", "row4", "row5", "row6", "row7", "row8"])
 
     st.dataframe(df, hide_index=True)
     
