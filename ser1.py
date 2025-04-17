@@ -34,7 +34,7 @@ with col3:
     df2 = pd.read_csv(csv_url, usecols=[7])
     df2_clean = df2.dropna()
     
-    st.dataframe(df2_clean, width= 350, hide_index=True, use_container_width=False)
+    st.dataframe(df2_clean, width= 100, hide_index=True, use_container_width=False)
     
     
 
