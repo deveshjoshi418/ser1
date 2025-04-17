@@ -32,7 +32,7 @@ with col3:
     # Load the CSV into a DataFrame
     df = pd.read_csv(csv_url)
 
-    st.dataframe(df, hide_index=True, column_order=("col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8"))
+    st.dataframe(df, hide_index=True, column_order=("col1", "col8")
     
 
 
