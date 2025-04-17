@@ -24,9 +24,9 @@ with col3:
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
     df = pd.read_csv(csv_url)
-    # dfst = pd.DataFrame(df, index=(["Name"]))
+    dfst = pd.DataFrame(df, index=(["Name"]))
 
-    st.dataframe(df, width= 515, hide_index=True, use_container_width=False)
+    st.dataframe(dfst, width= 515, hide_index=True, use_container_width=False)
     
     
 
