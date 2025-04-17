@@ -28,7 +28,7 @@ with col1:
     # Load the CSV into a DataFrame
     df = pd.read_csv(csv_url)
 
-    print(df.head())
+    st.dataframe(df)
 
 with col2:
     st.image("1.jpg", width=300)
