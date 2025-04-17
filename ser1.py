@@ -32,7 +32,7 @@ csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&
 df = pd.read_csv(csv_url)
 dfst = pd.DataFrame(df, index=["row1"])
 
-st.dataframe(df, width= 800, hide_index=True, use_container_width=False)
+st.dataframe(df, width= 600, hide_index=True, use_container_width=False)
     
     
 
