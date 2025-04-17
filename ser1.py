@@ -10,7 +10,7 @@ with col1:
     st.subheader("Quantity: 22")
     st.subheader("Size: 6 ft")
     st.link_button(label="Google sheets",
-                   url="https://docs.google.com/spreadsheets/d/1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY/edit?usp=sharing")
+                   url="https://docs.google.com/spreadsheets/d/1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY/edit?gid=687391187#gid=687391187")
 
 with col2:
     st.image("1.jpg", width=300)
