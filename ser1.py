@@ -26,7 +26,7 @@ with col3:
     df = pd.read_csv(csv_url)
     dfst = pd.DataFrame(df, index=["row1"])
 
-    st.dataframe(df, width= 515, hide_index=True, use_container_width=False)
+    st.dataframe(df, width= 515, hide_index=True, use_container_width=False, column_order=("col2", "col1"))
     
     
 
