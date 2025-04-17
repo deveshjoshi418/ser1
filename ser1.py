@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-col1, col2, col3= st.columns([0.2, 1, 1])
+col1, col2, col3= st.columns([0.2, 0.8, 1])
 
 with col1:
     st.title("SER")
