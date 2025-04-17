@@ -32,9 +32,9 @@ with col3:
     df = pd.read_csv(csv_url)
     dfst = pd.DataFrame(df, index=["row1"])
 
-    st.dataframe(df, width= 550, hide_index=True, use_container_width=False)
+    st.dataframe(df, width= 510, hide_index=True, use_container_width=False)
     
     
 
-
+    
 
