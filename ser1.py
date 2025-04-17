@@ -20,9 +20,7 @@ with col1:
     st.link_button(label="Google sheets",
                    url="https://docs.google.com/spreadsheets/d/1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY/edit?usp=sharing")
 
-with col2:
-    st.image("1.jpg", width=300)
-    sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
+sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
     gid = "0"  # GID of the first sheet
 
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
@@ -32,6 +30,10 @@ with col2:
     dfst = pd.DataFrame(df, index=["row1"])
 
     st.dataframe(df, hide_index=True)
+
+with col2:
+    st.image("1.jpg", width=300)
+    
     
 
 
