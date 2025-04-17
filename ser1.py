@@ -23,7 +23,7 @@ with col3:
 
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
-    df = pd.read_csv(csv_url, nrows=5)
+    df = pd.read_csv(csv_url, usecols=['Name', 'Quantity', 'Person', 'Event', 'Status', 'Total', 'Remaining'])
 
     st.dataframe(df, width= 515, hide_index=True, use_container_width=False)
     
