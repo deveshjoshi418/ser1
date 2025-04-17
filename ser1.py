@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from streamlit_gsheets import GSheetsConnection
 
 st.set_page_config(layout="wide")
 
@@ -20,23 +19,6 @@ with col1:
 
     st.link_button(label="Google sheets",
                   url="https://docs.google.com/spreadsheets/d/1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY/edit?usp=sharing")
-    
-    # Create a connection to Google Sheets
-    conn = st.connection("gsheets", type=GSheetsConnection)
-
-    # Read data from the Google Sheet
-    df = conn.read(
-        worksheet="Deco google test",  # Specify the worksheet name (optional)
-        ttl="10m",  # Cache data for 10 minutes
-        usecols=[0, 4],  # Read specific columns (optional)
-        nrows=100  # Limit to 100 rows (optional)
-    )
-
-    # Display the data
-    st.write("Data from Google Sheet:")
-    st.dataframe(df)
-
-    st.set_page_config(layout="wide")
 
 with col2:
     st.image("1.jpg", width=300)
