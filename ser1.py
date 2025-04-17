@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-col1, col2, col3 = st.columns([0.5, 1, 2])
+col1, col2= st.columns([0.5, 1])
 
 with col1:
     st.title("SER")
@@ -22,8 +22,6 @@ with col1:
 
 with col2:
     st.image("1.jpg", width=300)
-
-with col3:
     sheet_id = "1Roe8IzbNcUi4rwRpYZQb4Zvmpqvi-iDTvRbwZSTRnkY"
     gid = "0"  # GID of the first sheet
 
